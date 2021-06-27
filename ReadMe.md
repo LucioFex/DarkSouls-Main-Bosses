@@ -1,4 +1,4 @@
-# DarkSouls Big Bosses
+# DarkSouls Main Bosses
 
 ### This is a compilation of the main bosses from Dark Souls 1 and their counterpart in the second game.
 
