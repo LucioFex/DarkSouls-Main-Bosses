@@ -1,6 +1,8 @@
 # DarkSouls Main Bosses
 
-### This is a compilation of the main bosses from Dark Souls 1 and their counterpart in the second game.
+### This is a compilation of the main bosses from Dark Souls 1 and their counterparts in the second game.
+
+![](src/logo.png)
 
 You can move between the bosses within a 3D interface, to see a little about their lore.
 
