@@ -1,2 +1,4 @@
-conceptualImage.psd
-src/conceptualIcon.psd
+concept/conceptualImage.psd
+concept/conceptualIcon.psd
+node_modules
+package-lock.json
