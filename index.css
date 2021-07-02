@@ -1,1 +1,83 @@
 /* CSS3 document */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+footer {
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #212527;
+}
+
+#inner-footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+#logo-container {
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+#logo-container img {
+    width: 60%;
+    height: auto;
+}
+
+.footer-third {
+    width: calc(16.666666667% - 20px);
+    height: 100%;
+    margin-right: 10px;
+    float: left;
+}
+
+.footer-third:last-child {
+    margin-right: 0;
+}
+
+.footer-third h1 {
+    font-family: "arial";
+    font-size: 22px;
+    color: #f0efef;
+    display: block;
+    width: 103.5%;
+    margin-bottom: 20px;
+}
+
+.footer-third a {
+    font-family: "arial";
+    font-size: 18px;
+    color: #f0efef;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.footer-third li {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.footer-third span {
+    color: #f0efef;
+    font-family: "arial";
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+}
