@@ -55,6 +55,11 @@ footer {
     display: block;
     width: 103.5%;
     margin-bottom: 20px;
+    transition-duration: 2s;
+}
+
+.footer-third h1:hover {
+    text-decoration: underline;
 }
 
 .footer-third a {

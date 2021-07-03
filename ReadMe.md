@@ -29,6 +29,7 @@ the opening of an issue to check the change you want to make.
 - Skull icon: [FreePick (Flaticon)](https://www.flaticon.com/free-icon/skull_556107).
 - Dark Souls 1 & 2 Developers: [FromSoftware, Inc](https://www.fromsoftware.jp/ww/index.html).
 - Dark Souls 1 & 2 Publishers: [Namco Bandai Games](https://www.bandainamcoent.com/es/).
+- Social media icons: [Font Awesome](https://fontawesome.com/)
 
 ## Project Status:
 
