@@ -2,19 +2,18 @@
 
 header {
     width: 100vw;
-    height: 13vh;
+    height: 10vh;
     max-width: 100%;
-    display: block;
     overflow: hidden;
     background: #212527;
+    box-sizing: border-box;
 }
 
 #inner-header {
     width: fit-content;
     height: 100%;
-    margin: 0 75px;
+    margin: 0 6vw;
     background-color: #212527;
-    /* background-color: #f12; */
 }
 
 #inner-header img {
@@ -36,7 +35,7 @@ header {
     vertical-align: middle;
     font-family: "Roboto", "Century Gothic", "Arial";
     font-weight: lighter;
-    font-size: 32px;
+    font-size: 3.5vh;
 }
 
 #header-logo h1 span {
