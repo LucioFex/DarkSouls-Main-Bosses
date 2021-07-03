@@ -28,7 +28,7 @@ footer {
     float: left;
     height: 100%;
     display: block;
-    margin-left: -225px;
+    margin-left: -20%;
 }
 
 #logo-container img {
@@ -49,8 +49,8 @@ footer {
 }
 
 .footer-third h1 {
-    font-family: "arial";
-    font-size: 22px;
+    font-family: "century gothic";
+    font-size: 25px;
     color: #f0efef;
     display: block;
     width: 103.5%;
@@ -58,14 +58,15 @@ footer {
 }
 
 .footer-third a {
-    font-family: "arial";
+    font-family: "century gothic";
     font-size: 18px;
-    color: #f0efef;
+    color: #c7c7c7;
     display: block;
     font-weight: 200;
     width: 100%;
     margin-bottom: 20px;
     padding-bottom: 5px;
+    transition-duration: 0.5s;
 }
 
 .footer-third li {
@@ -74,14 +75,30 @@ footer {
     font-size: 20px;
 }
 
-.footer-third span {
+.footer-third li a{
+    font-size: 225%;
+    color: #c7c7c7;
+    transition-duration: 0.5s;
+}
+
+.footer-third a:hover {
     color: #f0efef;
+    transform: translateX(20px) scale(1.2);
+}
+
+.footer-third li a:hover {
+    color: #f0efef;
+    transform: scale(1.25);
+}
+
+.footer-third span {
+    color: #c7c7c7;
     font-family: "arial";
     font-size: 16px;
     font-weight: 200;
     display: block;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 @media(max-width: 1045px) {
@@ -92,5 +109,14 @@ footer {
     #logo-container, .footer-third {
         width: 100%;
         margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+    .footer-third a:hover, .footer-third li a:hover {
+        transform: none;
+    }
+
+    .footer-third a, .footer-third li a {
+        color: #f0efef;
     }
 }
