@@ -1,6 +1,15 @@
+/* CSS3 document */
+
+@font-face {
+    src: url(../src/fonts/Roboto-Regular.ttf);
+    font-family: Roboto;
+}
+
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 html, body {

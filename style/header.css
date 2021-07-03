@@ -1,0 +1,44 @@
+/* CSS3 document */
+
+header {
+    width: 100vw;
+    height: 13vh;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+    background: #212527;
+}
+
+#inner-header {
+    width: fit-content;
+    height: 100%;
+    margin: 0 75px;
+    background-color: #212527;
+    /* background-color: #f12; */
+}
+
+#inner-header img {
+    height: 100%;
+    width: auto;
+    float: left;
+}
+
+#header-logo {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+#header-logo h1 {
+    color: #f0efef;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Roboto", "Century Gothic", "Arial";
+    font-weight: lighter;
+    font-size: 32px;
+}
+
+#header-logo h1 span {
+    font-weight: 1000;
+}

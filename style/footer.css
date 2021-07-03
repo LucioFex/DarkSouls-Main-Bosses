@@ -1,17 +1,8 @@
 /* CSS3 document */
 
-@font-face {
-    src: url(src/fonts/Roboto-Regular.ttf);
-    font-family: roboto;
-}
-
-* {
-    list-style: none;
-    text-decoration: none;
-}
-
 footer {
     width: 100vw;
+    max-width: 100%;
     display: block;
     overflow: hidden;
     padding: 70px 0;
@@ -26,7 +17,7 @@ footer {
     height: 100%;
 }
 
-#logo-container {
+#footer-logo {
     width: 35%;
     float: left;
     height: 100%;
@@ -34,14 +25,14 @@ footer {
     margin-left: -20%;
 }
 
-#logo-container img {
+#footer-logo img {
     width: 80%;
     height: auto;
     margin-top: -35px;
     transition: 1.5s ease-out;
 }
 
-#logo-container img:hover {
+#footer-logo img:hover {
     transform: scale(1.05);
 }
 
@@ -148,7 +139,7 @@ footer {
         width: 90%;
     }
 
-    #logo-container, .footer-third {
+    #footer-logo, .footer-third {
         width: 100%;
         margin-bottom: 30px;
         margin-left: 0;
