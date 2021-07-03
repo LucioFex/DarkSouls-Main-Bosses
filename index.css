@@ -1,5 +1,10 @@
 /* CSS3 document */
 
+@font-face {
+    src: url(src/fonts/Roboto-Regular.ttf);
+    font-family: roboto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +59,7 @@ footer {
 }
 
 .footer-third h1 {
-    font-family: "century gothic";
+    font-family: "Century Gothic", "Roboto", "Arial";
     font-size: 25px;
     color: #f0efef;
     display: inline-block;
@@ -97,7 +102,7 @@ footer {
 }
 
 .footer-third a {
-    font-family: "century gothic";
+    font-family: "Century Gothic", "Roboto", "Arial";
     font-size: 18px;
     color: #c7c7c7;
     display: block;
