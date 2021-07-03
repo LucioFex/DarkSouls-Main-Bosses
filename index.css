@@ -52,14 +52,43 @@ footer {
     font-family: "century gothic";
     font-size: 25px;
     color: #f0efef;
-    display: block;
+    display: inline-block;
+    position: relative;
     width: 103.5%;
     margin-bottom: 20px;
-    transition-duration: 2s;
 }
 
-.footer-third h1:hover {
-    text-decoration: underline;
+.footer-third h1::before {
+    content: '';
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f0efef;
+    transform-origin: bottom left;
+    transition-duration: 0.75s;
+}
+
+#darksouls-copyright::before {
+    width: 59%;
+}
+
+#need-help::before {
+    width: 65%;
+}
+
+#more-lore::before {
+    width: 85%;
+}
+
+#follow-me::before {
+    width: 57%;
+}
+
+.footer-third h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .footer-third a {
@@ -86,14 +115,14 @@ footer {
     transition-duration: 0.5s;
 }
 
-.footer-third a:hover {
-    color: #f0efef;
-    transform: translateX(20px) scale(1.2);
-}
-
 .footer-third li a:hover {
     color: #f0efef;
     transform: scale(1.25);
+}
+
+.footer-third a:hover {
+    color: #f0efef;
+    transform: translateX(20px) scale(1.2);
 }
 
 .footer-third span {
@@ -123,5 +152,12 @@ footer {
 
     .footer-third a, .footer-third li a {
         color: #f0efef;
+    }
+
+    #darksouls-copyright::before,
+    #need-help::before,
+    #more-lore::before,
+    #follow-me::before {
+        width: 0px;
     }
 }
