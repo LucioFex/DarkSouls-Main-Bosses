@@ -35,6 +35,11 @@ footer {
     width: 80%;
     height: auto;
     margin-top: -35px;
+    transition: 1.5s ease-out;
+}
+
+#logo-container img:hover {
+    transform: scale(1.05);
 }
 
 .footer-third {
@@ -66,8 +71,13 @@ footer {
     bottom: 0;
     left: 0;
     background-color: #f0efef;
+    transform-origin: bottom right;
+    transition: transform 0.45s ease-in-out;
+}
+
+.footer-third h1:hover::before {
+    transform: scaleX(1);
     transform-origin: bottom left;
-    transition-duration: 0.75s;
 }
 
 #darksouls-copyright::before {
@@ -84,11 +94,6 @@ footer {
 
 #follow-me::before {
     width: 57%;
-}
-
-.footer-third h1:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
 }
 
 .footer-third a {
