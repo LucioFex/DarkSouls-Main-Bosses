@@ -42,9 +42,7 @@ header {
 }
 
 nav {
-    background: linear-gradient(to right, #212527 80%, #191c1f);
-    /* background-color:#191c1f; */
-    /* background-color:#20546e; */
+    background: linear-gradient(to left, #141618, #24282c);
     overflow: hidden;
     max-width: 100%;
     width: 100vw;
@@ -60,6 +58,12 @@ nav {
 }
 
 #change-game {
+    cursor: pointer;
     height: 90%;
     width: auto;
+    transition: transform 0.1s;
+}
+
+#change-game:active {
+    transform: scale(0.90);
 }
