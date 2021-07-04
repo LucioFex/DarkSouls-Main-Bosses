@@ -5,7 +5,7 @@ header {
     height: 10vh;
     max-width: 100%;
     overflow: hidden;
-    background: #212527;
+    background-color: #212527;
     box-sizing: border-box;
 }
 
@@ -13,7 +13,6 @@ header {
     width: fit-content;
     height: 100%;
     margin: 0 6vw;
-    background-color: #212527;
 }
 
 #inner-header img {
@@ -40,4 +39,27 @@ header {
 
 #header-logo h1 span {
     font-weight: 1000;
+}
+
+nav {
+    background: linear-gradient(to right, #212527 80%, #191c1f);
+    /* background-color:#191c1f; */
+    /* background-color:#20546e; */
+    overflow: hidden;
+    max-width: 100%;
+    width: 100vw;
+    height: 10vh;
+}
+
+#inner-nav {
+    margin-left: calc(100vw - 115px);
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#change-game {
+    height: 90%;
+    width: auto;
 }
