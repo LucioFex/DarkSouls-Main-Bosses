@@ -33,7 +33,7 @@ the opening of an issue to check the change you want to make.
 
 ## Project Status:
 
-### `Version: 1.0.1`
+### `Version: 1.1.8`
 
 ## License
 
