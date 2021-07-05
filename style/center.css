@@ -4,14 +4,19 @@
     max-width: 100%;
     overflow: hidden;
     font-family: "Roboto", "Century Gothic", "Arial";
+    color: #f0efef;
 }
 
 section {
-    flex: 2.1;
-    background: green;
+    flex: 2;
+    background-color: #181f24f6;
+    padding: 25px;
+    border: 3px solid #4b29aa2d;
 }
 
 aside {
     flex: 1;
-    background: purple;
+    background-color: #1a2227fa;
+    padding: 25px;
+    border: 3px solid #4b29aa2d;
 }
