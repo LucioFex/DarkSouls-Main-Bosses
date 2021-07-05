@@ -2,7 +2,6 @@
 
 header {
     width: 100vw;
-    /* height: 10vh; */
     max-width: 100%;
     overflow: hidden;
     background-color: #212527;
@@ -19,6 +18,7 @@ header {
     height: 80px;
     width: auto;
     float: left;
+    user-select: none;
 }
 
 #header-logo {
@@ -35,6 +35,7 @@ header {
     font-family: "Roboto", "Century Gothic", "Arial";
     font-weight: lighter;
     font-size: 32px;
+    user-select: none;
 }
 
 #header-logo h1 span {
