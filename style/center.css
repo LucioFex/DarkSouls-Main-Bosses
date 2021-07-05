@@ -1,0 +1,17 @@
+#center-container {
+    width: 100vw;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    font-family: "Roboto", "Century Gothic", "Arial";
+}
+
+section {
+    flex: 2.1;
+    background: green;
+}
+
+aside {
+    flex: 1;
+    background: purple;
+}
