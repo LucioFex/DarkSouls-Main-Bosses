@@ -2,7 +2,7 @@
 
 header {
     width: 100vw;
-    height: 10vh;
+    /* height: 10vh; */
     max-width: 100%;
     overflow: hidden;
     background-color: #212527;
@@ -16,7 +16,7 @@ header {
 }
 
 #inner-header img {
-    height: 100%;
+    height: 80px;
     width: auto;
     float: left;
 }
@@ -34,7 +34,7 @@ header {
     vertical-align: middle;
     font-family: "Roboto", "Century Gothic", "Arial";
     font-weight: lighter;
-    font-size: 3.5vh;
+    font-size: 32px;
 }
 
 #header-logo h1 span {
@@ -46,20 +46,19 @@ nav {
     overflow: hidden;
     max-width: 100%;
     width: 100vw;
-    height: 10vh;
 }
 
 #inner-nav {
     margin-left: calc(100vw - 115px);
     width: fit-content;
-    height: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
 }
 
 #change-game {
     cursor: pointer;
-    height: 90%;
+    height: 90px;
     width: auto;
     transition: transform 0.1s;
 }

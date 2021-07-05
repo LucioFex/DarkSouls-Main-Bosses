@@ -144,19 +144,4 @@ footer {
         margin-bottom: 30px;
         margin-left: 0;
     }
-
-    .footer-third a:hover, .footer-third li a:hover {
-        transform: none;
-    }
-
-    .footer-third a, .footer-third li a {
-        color: #f0efef;
-    }
-
-    #darksouls-copyright::before,
-    #need-help::before,
-    #more-lore::before,
-    #follow-me::before {
-        width: 0px;
-    }
 }
