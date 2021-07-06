@@ -9,14 +9,14 @@
 
 section {
     flex: 2;
-    background-color: #181f24f6;
+    background-color: #181f24d5;
     padding: 25px;
-    border: 3px solid #4b29aa2d;
+    border: 3px solid #4b29aa4f;
 }
 
 aside {
     flex: 1;
-    background-color: #1a2227fa;
+    background-color: #1a2227d5;
     padding: 25px;
-    border: 3px solid #4b29aa2d;
+    border: 3px solid #4b29aa4f;
 }

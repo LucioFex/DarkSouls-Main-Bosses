@@ -50,7 +50,7 @@ nav {
 }
 
 #inner-nav {
-    margin-left: calc(100vw - 115px);
+    margin-left: calc(98vw - 100px);
     width: fit-content;
     height: 100px;
     display: flex;

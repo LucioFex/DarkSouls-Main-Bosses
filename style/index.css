@@ -14,17 +14,15 @@
 
 html, body {
     height: 100%;
-    background-color: #11181b;
-    /*
-    background-image: url("https://64.media.tumblr.com/d70ebe50ad456874e96594190c89ae09/tumblr_nwsgtr9Hw11tgzy56o1_640.gifv");
+    background-image: url("../src/dark-souls-bg.gif");
     background-size: cover;
     background-position: center;
-    Waiting for and answer
-    */
+    /* background-attachment: fixed; */
 }
 
 #container {
     min-height: 100%;
+    background-color: #11181bc2;
 }
 
 #main {
