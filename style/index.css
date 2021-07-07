@@ -17,7 +17,7 @@ html, body {
     background-image: url("../src/dark-souls-bg.gif");
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: scroll;
 }
 
 #container {
@@ -28,4 +28,10 @@ html, body {
 #main {
     overflow: auto;
     padding-bottom: 100px;
+}
+
+@media(max-width: 1360px) {
+    html, body {
+        background-attachment: fixed;
+    }
 }
