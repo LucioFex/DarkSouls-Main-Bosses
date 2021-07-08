@@ -32,6 +32,7 @@ the opening of an issue to check the change you want to make.
 - Dark Souls 1 & 2 Publishers: [Namco Bandai Games](https://www.bandainamcoent.com/es/).
 - Social media icons: [Font Awesome](https://fontawesome.com/)
 - Dark Souls 1 Background Pixel Art: [Zedotagger](https://twitter.com/Zedotagger).
+- Dark Souls 1 Seath and Izalith Images: [Steve Stark](https://twitter.com/sstarkm).
 
 ## Project Status:
 

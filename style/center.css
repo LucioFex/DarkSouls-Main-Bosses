@@ -34,7 +34,7 @@ aside {
     width: 38vw;
     height: 38vw;
     position: relative;
-    /* transition: all 3s; */
+    transition: all 3s;
     transform-style: preserve-3d;
 }
 
@@ -87,7 +87,6 @@ article {
 
 #inner-article {
     display: block;
-    /* background: purple; */
     width: 60%;;
     margin: auto;
 }
