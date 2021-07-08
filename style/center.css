@@ -16,7 +16,7 @@ section {
 
 aside {
     flex: 1;
-    background-color: #1a2227d5;
+    background-color: #181f24d5;
     padding: 25px;
     border: 3px solid #4b29aa4f;
 }
@@ -34,7 +34,7 @@ aside {
     width: 38vw;
     height: 38vw;
     position: relative;
-    /* transition: all 3s; */
+    transition: all 3s;
     transform-style: preserve-3d;
 }
 
@@ -46,25 +46,34 @@ aside {
     position: absolute;
     width: 100%;
     height: 100%;
+    border-radius: 0.5vw;
 }
 
 #one {
-    background-color: #8d2323;
+    background-color: #0c202e48;
+    background-image: url("../src/bosses/gwyn.png");
+    background-size: cover;
     transform: translateZ(19vw);
 }
 
 #two {
-    background-color: #26ff00;
+    background-color: #0c202e48;
+    background-image: url("../src/bosses/nito.png");
+    background-size: cover;
     transform: rotateY(90deg) translateZ(19vw);
 }
 
 #three {
-    background-color: purple;
+    background-color: #0c202e48;
+    background-image: url("../src/bosses/izalith.jpg"); /* Change later */
+    background-size: cover;
     transform: rotateY(90deg) translateZ(-19vw);
 }
 
 #four {
-    background-color: #002280;
+    background-color: #0c202e48;
+    background-image: url("../src/bosses/seath.jpg"); /* Change later */
+    background-size: cover;
     transform: translateZ(-19vw);
 }
 
