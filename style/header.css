@@ -62,6 +62,7 @@ nav {
     height: 90px;
     width: auto;
     transition: transform 0.1s;
+    user-select: none;
 }
 
 #change-game:active {

@@ -1,0 +1,33 @@
+aside {
+    flex: 1;
+    display: block;
+    background-color: #181f248c;
+    border: 3px solid #4b29aa4f;
+    padding: 30px;
+}
+
+#name-nickname {
+    background: #031d241e;
+    border: 5px dashed #083b2a8c;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#boss-name {
+    font-size: 2.5em;
+}
+
+#boss-nickname {
+    color: #cfcfcf;
+}
+
+#boss-description {
+    color: #ecebeb;
+    font-family: "Montserrat", "Century Gothic", "Roboto";
+    font-weight: 500;
+    padding: 5%;
+    text-align: center;
+    font-size: 1.5em;
+}

@@ -5,6 +5,11 @@
     font-family: Roboto;
 }
 
+@font-face {
+    src: url(../src/fonts/Montserrat-Regular.ttf);
+    font-family: Montserrat;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +33,15 @@ html, body {
 #main {
     overflow: auto;
     padding-bottom: 100px;
+}
+
+#center-container {  /* Childs: Section and Aside tags */
+    width: 100vw;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    font-family: "Roboto", "Century Gothic", "Arial";
+    color: #f0efef;
 }
 
 @media(max-width: 1360px) {

@@ -1,25 +1,9 @@
-#center-container {
-    width: 100vw;
-    display: flex;
-    max-width: 100%;
-    overflow: hidden;
-    font-family: "Roboto", "Century Gothic", "Arial";
-    color: #f0efef;
-}
-
 section {
     flex: 2;
     display: block;
     background-color: #181f24d5;
-    padding: 25px;
     border: 3px solid #4b29aa4f;
-}
-
-aside {
-    flex: 1;
-    background-color: #181f24d5;
     padding: 25px;
-    border: 3px solid #4b29aa4f;
 }
 
 #inner-section {
@@ -34,7 +18,7 @@ aside {
     width: 38vw;
     height: 38vw;
     position: relative;
-    transition: all 3s;
+    transition: all 5s;
     transform-style: preserve-3d;
 }
 
