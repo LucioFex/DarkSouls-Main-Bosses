@@ -47,6 +47,7 @@ aside {
     width: 100%;
     height: 100%;
     border-radius: 0.5vw;
+    user-select: none;
 }
 
 #one {
@@ -78,7 +79,6 @@ article {
     overflow: hidden;
     margin-top: 21vh;
     width: 100%;
-    background: #081f2fbc;
 }
 
 #inner-article {
@@ -88,13 +88,25 @@ article {
 }
 
 .boss-icon {
-    width: 20%;
+    width: 19%;
     height: auto;
     margin: 0 2%;
+    border-radius: 40%;
+    border: 2px solid #21082f85;
+    transition: transform 0.1s;
+    user-select: none;
+}
+
+.boss-icon:active {
+    transform: scale(0.90);
 }
 
 
-@media(max-width: 700px) {
+@media(max-width: 800px) {
+    article {
+        margin-top: 22vw;
+    }
+
     .boss-icon {
         width: 40%;
     }
