@@ -18,12 +18,12 @@ section {
     width: 38vw;
     height: 38vw;
     position: relative;
-    transition: all 5s;
+    transition: all 2.5s;
     transform-style: preserve-3d;
 }
 
 #cube:hover {
-    transform: rotateY(360deg);
+    transform: rotateY(270deg);
 }
 
 .face {
@@ -79,6 +79,7 @@ article {
     border: 2px solid #21082f85;
     transition: transform 0.1s;
     user-select: none;
+    cursor: pointer;
 }
 
 .boss-icon:active {

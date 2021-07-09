@@ -15,11 +15,11 @@ aside {
     margin-bottom: 3%;
 }
 
-#boss-name {
+#name-nickname h1 {
     font-size: 2.5em;
 }
 
-#boss-nickname {
+#name-nickname h2 {
     color: #cfcfcf;
 }
 
@@ -29,12 +29,13 @@ aside {
     font-weight: 500;
     padding: 5%;
     text-align: center;
-    font-size: 1.48em;
+    font-size: 1.2vw;
 }
 
 #iframe-container{
     position: relative;
     width: 100%;
+    margin-top: 1vw;
     padding-bottom: 56.25%;
 }
 
@@ -42,4 +43,16 @@ aside {
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+@media(max-width: 1360px) {
+    #boss-description {
+        font-size: 2vw;
+    }
+}
+
+@media(max-width: 800px) {
+    #boss-description {
+        font-size: 4vw;
+    }
 }
