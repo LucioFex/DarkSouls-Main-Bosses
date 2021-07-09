@@ -50,29 +50,25 @@ aside {
 }
 
 #one {
-    background-color: #0c202e48;
-    background-image: url("../src/bosses/gwyn.png");
+    background-image: url("../src/bosses/nito.png");
     background-size: cover;
     transform: translateZ(19vw);
 }
 
 #two {
-    background-color: #0c202e48;
-    background-image: url("../src/bosses/nito.png");
+    background-image: url("../src/bosses/seath.jpg");
     background-size: cover;
     transform: rotateY(90deg) translateZ(19vw);
 }
 
 #three {
-    background-color: #0c202e48;
-    background-image: url("../src/bosses/izalith.jpg"); /* Change later */
+    background-image: url("../src/bosses/izalith.jpg");
     background-size: cover;
     transform: rotateY(90deg) translateZ(-19vw);
 }
 
 #four {
-    background-color: #0c202e48;
-    background-image: url("../src/bosses/seath.jpg"); /* Change later */
+    background-image: url("../src/bosses/gwyn.png");
     background-size: cover;
     transform: translateZ(-19vw);
 }
