@@ -80,6 +80,11 @@ article {
     transition: transform 0.1s;
     user-select: none;
     cursor: pointer;
+    filter: grayscale(80%)
+}
+
+.boss-icon:first-child{
+    filter: grayscale(0%);
 }
 
 .boss-icon:active {
