@@ -35,7 +35,7 @@ section {
 }
 
 #one {
-    background-image: url("../src/bosses/nito.png");
+    background-image: url("../src/bosses/nito.jpg");
     background-size: cover;
     transform: translateZ(19vw);
 }
@@ -53,7 +53,7 @@ section {
 }
 
 #four {
-    background-image: url("../src/bosses/gwyn.png");
+    background-image: url("../src/bosses/gwyn.jpg");
     background-size: cover;
     transform: translateZ(-19vw);
 }
