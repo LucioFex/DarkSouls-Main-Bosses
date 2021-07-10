@@ -18,12 +18,7 @@ section {
     width: 38vw;
     height: 38vw;
     position: relative;
-    transition: all 2.5s;
     transform-style: preserve-3d;
-}
-
-#cube:hover {
-    transform: rotateY(270deg);
 }
 
 .face {
@@ -80,7 +75,7 @@ article {
     transition: transform 0.1s;
     user-select: none;
     cursor: pointer;
-    filter: grayscale(80%)
+    filter: grayscale(80%);
 }
 
 .boss-icon:first-child{
