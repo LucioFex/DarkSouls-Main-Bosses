@@ -6,30 +6,32 @@ const bossIcons = document.getElementsByClassName("boss-icon");
 const gameChanger = document.getElementById("change-game");
 const cube3D = document.getElementById("cube");
 
+
 const setUp = () => {
-    let bosses = ["nito", "izalith", "gwyn", "seath"];
-    for (i=0; i < 4; i++) {changeBossButton(i, bosses[i])}
+    let bosses = ["nito", "seath", "izalith", "gwyn"];
+    for (index=0; index < 4; index++) {changeBossButton(index, bosses[index])}
 }
 
 const changeBossButton = (index, boss) => {
     bossIcons[index].addEventListener("click", () => changeBoss(boss));
 }
 
-const changeBoss = (boss) => {
-    const bosses = {
-        nito: "0deg",
-        izalith: "90deg",
-        gwyn: "180deg",
-        seath: "270deg"
-    }
+const getBossData = async () => {
+    const request = "json/dark-souls-1.json";
+    const response = await fetch(request);
+    const json = await response.json();
+    return json
+}
 
-    cubeAnimation(bosses[boss]);
+const changeBoss = async (boss) => {
+    const data = await getBossData()
+    cubeAnimation(data[boss].degrees);
 }
 
 const cubeAnimation = (degrees) => {
     cube3D.style.transition = "ease-in-out 2.5s";
     cube3D.style.transform = `rotateY(${degrees})`;
-    setTimeout(() => cube3D.style.transition = "all 0s", 5); // No transition
+    setTimeout(() => cube3D.style.transition = "all 0s", 250); // No transition
 }
 
 

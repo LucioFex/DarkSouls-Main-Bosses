@@ -1,0 +1,30 @@
+{
+    "nito": {
+        "name": "Nito",
+        "nickname": "The First of the Dead",
+        "degrees": "0deg",
+        "lore": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Labore placeat eaque atque aut eos quaerat, in quo at perspiciatisveritatis enim rerum ratione repellat ipsa nemo excepturi, optiomollitia omnis.<br>Duis id mauris non dolor sagittis euismod vitae sit amet mi. Duisat mattis sapien. Vivamus bibendum tincidunt elit id porttitor.Sed molestie vitae urna nec hendrerit. Praesent tristique eros utelit convallis scelerisque. Donec blandit rutrum bibendum.<br>Curabitur eget bibendum metus. Cras sit amet dapibus enim. In erosdolor, eleifend nec fringilla non, congue vel purus. Nullafermentum ultrices augue nec elementum. In auctor, ex egetconsectetur vulputate, felis tortor pellentesque quam, vitaegravida massa metus eu mi.<br> Morbi et nisl quis tellus aliquamefficitur non eu nibh. Duis et luctus tortor. Maecenas sit ameturna et libero varius consectetur. Fusce blandit elementum rutrum.Cras nec mauris rhoncus, dictum diam ac, semper ligula.",
+        "boss-fight": "https://www.youtube-nocookie.com/embed/JrClUJyHY-o"
+    },
+    "seath": {
+        "name": "Seath",
+        "nickname": "The Scaleless",
+        "degrees": "90deg",
+        "lore": "Procedimientos Especiales de Contención: El ítem SCP-173 debe estar en una cámara sellada todo el tiempo. Cuando un miembro del personal deba entrar a la cámara de SCP-173, al menos tres personas deben entrar a la vez y la puerta debe volverse a cerrar tras de ellos.<br> En todo momento, 2 personas deben mantener contacto visual con SCP-173 hasta que la cámara haya sido vaciada y vuelta a cerrar. Descripción: Trasladado al Sitio-19<br> en 1993. Su origen es aún desconocido. Está construido de hormigón y barras de refuerzo con trazos de pintura en aerosol marca Krylon. SCP-173 está animado y es extremadamente hostil. El objeto no se puede mover mientras esté dentro del campo de visión directa de alguien. El contacto visual hacia SCP-173 no se debe romper en ningún momento.",
+        "boss-fight": "https://www.youtube.com/watch?v=rhkILnXdWtU"
+    },
+    "izalith": {
+        "name": "The Witch of Izalith",
+        "nickname": "The Bed of Chaos",
+        "degrees": "180deg",
+        "lore": "Procedimientos Especiales de Contención: El Sitio-83 ha sido establecido fuera de SCP-121 para alojar al personal dedicado a la contención de SCP-121.<br>El perímetro de SCP-121 permanecerá cercado del área circundante, con guardias establecidos a lo largo del perímetro en todo momento. Los guardias deberán portar uniformes<br> del ejército local y permanecer armados en todo momento. Los guardias deberán rotarse cada cuatro horas.<br> Se deberá informar a la<br> población que SCP-121 se encuentra en cuarentena debido a la persistencia de material peligroso. Se colocarán signos de advertencia a los setenta y cinco (75), cincuenta (50) y veinticinco (25) kilómetros de todas las vías que lleven a SCP-121 para disuadir a los intrusos.<br>Se deberá<br> recordar a los civiles que se aproximen a SCP-121 del estado de cuarentena, y deberán ser forzados a partir; aquellos que se resistan deberán ser detenidos para cuestionamiento.",
+        "boss-fight": "https://www.youtube.com/watch?v=SUCzgiucoxA"
+    },
+    "gwyn": {
+        "name": "Gwym",
+        "nickname": "The Lord of Cinder",
+        "degrees": "270deg",
+        "lore": "Procedimientos Especiales de Contención: SCP-129 está en gran parte del mundo e infecta a grandes cantidades de humanos y animales diariamente. Por lo tanto, los esfuerzos por su contención están centrados en tratar a los individuos infectados y en la erradicación de todas las especies que pertenezcan a SCP-129. Aunque al menos el 98% de la población mundial alberga una inmunidad natural a una o más especies de SCP-129, los brotes que alcanzan la Tercera Etapa o superior (descritas más abajo) deben ser contenidos tan pronto como sea posible y los individuos afectados puestos bajo cuarentena bajo los protocolos de alto riesgo de contagio. Consulte el Documento #129-A-1 para más información.",
+        "boss-fight": "https://www.youtube.com/watch?v=VIeqxGaZnFo"
+    }
+}
