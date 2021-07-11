@@ -3,6 +3,7 @@
 const bossInformation = document.getElementsByClassName("boss-lore");
 const cubeBossOne = document.getElementsByClassName("face");
 const bossIcons = document.getElementsByClassName("boss-icon");
+const bossFightVideo = document.getElementById("embed-video");
 const gameChanger = document.getElementById("change-game");
 const cube3D = document.getElementById("cube");
 
@@ -27,7 +28,8 @@ const changeBoss = async (boss) => {
     let data = await getBossData()
 
     cubeAnimation(data[boss].degrees);
-    bossDescription(data[boss])
+    bossDescription(data[boss]);
+    bossVideo(data[boss].video);
 }
 
 const cubeAnimation = (degrees) => {
@@ -40,6 +42,10 @@ const bossDescription = (description) => {
     bossInformation[0].innerHTML = description.name;
     bossInformation[1].innerHTML = description.nickname;
     bossInformation[2].innerHTML = description.lore;
+}
+
+const bossVideo = (video) => {
+    bossFightVideo.src = video;
 }
 
 
