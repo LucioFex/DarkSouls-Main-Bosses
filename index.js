@@ -29,7 +29,7 @@ const changeBoss = async (boss) => {
 
     cubeAnimation(data[boss].degrees);
     bossDescription(data[boss]);
-    bossVideo(data[boss].video);
+    bossFightVideo.src = data[boss].video;
 }
 
 const cubeAnimation = (degrees) => {
@@ -38,14 +38,24 @@ const cubeAnimation = (degrees) => {
     setTimeout(() => cube3D.style.transition = "all 0s", 250); // No transition
 }
 
-const bossDescription = (description) => {
-    bossInformation[0].innerHTML = description.name;
-    bossInformation[1].innerHTML = description.nickname;
-    bossInformation[2].innerHTML = description.lore;
-}
+const bossDescription = (description) => {  // Refactor later
+    for (tag of bossInformation) {
+        tag.style.transition = "ease-in-out 0.75s";
+        tag.style.opacity = 0;
+    }
 
-const bossVideo = (video) => {
-    bossFightVideo.src = video;
+    setTimeout(() => {
+        bossInformation[0].innerHTML = description.name;
+        bossInformation[1].innerHTML = description.nickname;
+        bossInformation[2].innerHTML = description.lore;
+    }, 750)
+
+    setTimeout(() => {
+        for (tag of bossInformation) {
+            tag.style.opacity = 1;
+    }}, 750)
+
+    setTimeout(() => tag.style.transition = "all 0s", 751)
 }
 
 
