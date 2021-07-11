@@ -42,6 +42,7 @@ html, body {
     overflow: hidden;
     font-family: "Roboto", "Century Gothic", "Arial";
     color: #f0efef;
+    margin-bottom: 10vh;
 }
 
 @media(max-width: 1360px) {
