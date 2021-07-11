@@ -7,20 +7,29 @@ const gameChanger = document.getElementById("change-game");
 const cube3D = document.getElementById("cube");
 
 const setUp = () => {
-    bossIcons[0].addEventListener("click", () => cubeAnimations(`0deg`))
-    bossIcons[1].addEventListener("click", () => cubeAnimations(`90deg`))
-    bossIcons[2].addEventListener("click", () => cubeAnimations(`180deg`))
-    bossIcons[3].addEventListener("click", () => cubeAnimations(`270deg`))
+    let bosses = ["nito", "izalith", "gwyn", "seath"];
+    for (i=0; i < 4; i++) {changeBossButton(i, bosses[i])}
 }
 
-const cubeAnimations = (degrees) => {
+const changeBossButton = (index, boss) => {
+    bossIcons[index].addEventListener("click", () => changeBoss(boss));
+}
+
+const changeBoss = (boss) => {
+    const bosses = {
+        nito: "0deg",
+        izalith: "90deg",
+        gwyn: "180deg",
+        seath: "270deg"
+    }
+
+    cubeAnimation(bosses[boss]);
+}
+
+const cubeAnimation = (degrees) => {
     cube3D.style.transition = "ease-in-out 2.5s";
     cube3D.style.transform = `rotateY(${degrees})`;
-    setTimeout(removeTransition, 5)
-}
-
-const removeTransition = () => {
-    cube3D.style.transition = "all 0s";
+    setTimeout(() => cube3D.style.transition = "all 0s", 5); // No transition
 }
 
 
