@@ -36,19 +36,19 @@ section {
 }
 
 #two {
-    background-image: url("../src/bosses/seath.jpg");
+    background-image: url("../src/bosses/gwyn.jpg");
     background-size: cover;
     transform: rotateY(90deg) translateZ(19vw);
 }
 
 #three {
-    background-image: url("../src/bosses/izalith.jpg");
+    background-image: url("../src/bosses/seath.jpg");
     background-size: cover;
     transform: rotateY(90deg) translateZ(-19vw);
 }
 
 #four {
-    background-image: url("../src/bosses/gwyn.jpg");
+    background-image: url("../src/bosses/izalith.jpg");
     background-size: cover;
     transform: translateZ(-19vw);
 }
