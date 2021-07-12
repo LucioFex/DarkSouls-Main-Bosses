@@ -38,7 +38,7 @@ const cubeAnimation = (degrees) => {
     setTimeout(() => cube3D.style.transition = "all 0s", 250); // No transition
 }
 
-const bossDescription = (description) => {  // Refactor later
+const bossDescription = (description) => {
     for (tag of bossInformation) {
         tag.style.transition = "ease-in-out 0.75s";
         tag.style.opacity = 0;
@@ -48,14 +48,12 @@ const bossDescription = (description) => {  // Refactor later
         bossInformation[0].innerHTML = description.name;
         bossInformation[1].innerHTML = description.nickname;
         bossInformation[2].innerHTML = description.lore;
-    }, 750)
 
-    setTimeout(() => {
         for (tag of bossInformation) {
             tag.style.opacity = 1;
-    }}, 750)
-
-    setTimeout(() => tag.style.transition = "all 0s", 751)
+            tag.style.transition = "all 0s";
+        }
+    }, 750)
 }
 
 
