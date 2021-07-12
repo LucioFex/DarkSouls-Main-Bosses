@@ -28,8 +28,8 @@ const changeBoss = async (boss) => {
     let data = await getBossData()
 
     cubeAnimation(data[boss].degrees);
-    bossDescription(data[boss]);
     // bossGrayScale(boss);
+    bossDescription(data[boss]);
     bossFightVideo.src = data[boss].video;
 }
 
@@ -40,18 +40,17 @@ const cubeAnimation = (degrees) => {
 }
 
 const bossDescription = (description) => {
-    let bossLore = [description.name, description.nick, description.lore];
-
     for (tag of bossInformation) {
         tag.style.transition = "ease-in-out 0.75s";
         tag.style.opacity = 0;
     }
 
     setTimeout(() => {
-        for (index=0; index < 3; index++) {
-            bossInformation[index].innerHTML = bossLore[index];
-            bossInformation[index].style.opacity = 1
-        }
+        bossInformation[0].innerHTML = description.name;
+        bossInformation[1].innerHTML = description.nickname;
+        bossInformation[2].innerHTML = description.lore;
+
+        for (tag of bossInformation) {tag.style.opacity = 1}
     }, 750)
 
     setTimeout(() => {
