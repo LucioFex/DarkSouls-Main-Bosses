@@ -11,23 +11,24 @@ const cube3D = document.getElementById("cube");
 const setUp = () => {
     /* Prepares the addEventListener and some functions after the DOM loads */
     let bosses = ["one", "two", "three", "four"];
-    for (index=0; index < 4; index++) {changeBossButton(index, bosses[index])}
+    for (index=0; index < 4; index++) {changeBossDS1(index, bosses[index])}
 }
 
-const changeBossButton = (index, boss) => {
-    bossIcons[index].addEventListener("click", () => changeBoss(boss));
+const changeBossDS1 = (index, boss) => {
+    bossIcons[index].addEventListener(
+        "click", () => changeBoss(boss, "dark-souls-1"), false);
 }
 
-const getBossData = async () => {
+const getBossData = async (darksouls) => {
     /* Is a request-function to get the data from the JSON files */
-    let request = "json/dark-souls-1.json";
+    let request = `json/${darksouls}.json`;
     let response = await fetch(request);
     let json = await response.json();
     return json
 }
 
-const changeBoss = async (boss) => {
-    let data = await getBossData()
+const changeBoss = async (boss, darksouls) => {
+    let data = await getBossData(darksouls);
 
     cubeAnimation(data[boss].degrees); // 3D cube animations
     bossDescription(data[boss]); // Text changer and animations
