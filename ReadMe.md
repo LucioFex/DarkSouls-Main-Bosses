@@ -13,10 +13,12 @@ The boss sections (Dark Souls 1 and 2) are separated by a button with the number
 - HTML5.
 - CSS3.
 - JavaScript (ECMAScript).
+    - Fetch API.
 
 ## How to run:
 
-You just have to execute the `index.html` file.
+- Due to the [Fetch API](https://developer.mozilla.org/es/docs/Web/API/Fetch_API), you have to run a server (or a local server) in any port.
+- Then, execute the `index.html` file inside of this localhost.
 
 ## Contributions
 
