@@ -9,6 +9,7 @@ const cube3D = document.getElementById("cube");
 
 
 const setUp = () => {
+    /* Prepares the addEventListener and some functions after the DOM loads */
     let bosses = ["nito", "seath", "izalith", "gwyn"];
     for (index=0; index < 4; index++) {changeBossButton(index, bosses[index])}
 }
@@ -18,6 +19,7 @@ const changeBossButton = (index, boss) => {
 }
 
 const getBossData = async () => {
+    /* Is a request-function to get the data from the JSON files */
     let request = "json/dark-souls-1.json";
     let response = await fetch(request);
     let json = await response.json();
@@ -27,10 +29,10 @@ const getBossData = async () => {
 const changeBoss = async (boss) => {
     let data = await getBossData()
 
-    cubeAnimation(data[boss].degrees);
-    bossDescription(data[boss]);
-    bossGrayScale(data[boss].iconId);
-    bossFightVideo.src = data[boss].video;
+    cubeAnimation(data[boss].degrees); // 3D cube animations
+    bossDescription(data[boss]); // Text changer and animations
+    bossGrayScale(data[boss].iconId); // Boss-icons gray scale animation
+    bossFightVideo.src = data[boss].video; // Youtube video changer
 }
 
 const cubeAnimation = (degrees) => {
@@ -68,5 +70,5 @@ const bossDescription = (description) => {
     }, 1000)
 }
 
-
-window.addEventListener('load', setUp, false); // Starts the script
+// Wait for the DOM to start the script
+window.addEventListener('load', setUp, false);
