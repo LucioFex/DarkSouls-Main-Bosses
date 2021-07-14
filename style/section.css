@@ -30,25 +30,25 @@ section {
 }
 
 #one {
-    background-image: url("../src/bosses/nito.jpg");
+    background-image: url("../src/bosses/dark-souls-1/one.jpg");
     background-size: cover;
     transform: translateZ(19vw);
 }
 
 #two {
-    background-image: url("../src/bosses/gwyn.jpg");
+    background-image: url("../src/bosses/dark-souls-1/four.jpg");
     background-size: cover;
     transform: rotateY(90deg) translateZ(19vw);
 }
 
 #three {
-    background-image: url("../src/bosses/seath.jpg");
+    background-image: url("../src/bosses/dark-souls-1/two.jpg");
     background-size: cover;
     transform: rotateY(90deg) translateZ(-19vw);
 }
 
 #four {
-    background-image: url("../src/bosses/izalith.jpg");
+    background-image: url("../src/bosses/dark-souls-1/three.jpg");
     background-size: cover;
     transform: translateZ(-19vw);
 }

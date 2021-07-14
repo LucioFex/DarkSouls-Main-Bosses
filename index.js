@@ -10,7 +10,7 @@ const cube3D = document.getElementById("cube");
 
 const setUp = () => {
     /* Prepares the addEventListener and some functions after the DOM loads */
-    let bosses = ["nito", "seath", "izalith", "gwyn"];
+    let bosses = ["one", "two", "three", "four"];
     for (index=0; index < 4; index++) {changeBossButton(index, bosses[index])}
 }
 
@@ -47,7 +47,7 @@ const bossGrayScale = (iconId) => {
         tag.style.filter = "grayscale(80%)";
 
         if (tag.id === iconId) {tag.style.filter = "grayscale(0%)"}
-        setTimeout(() => {tag.style.transition = "all 0s";}, 100);
+        setTimeout(() => {tag.style.transition = "all 0s"}, 100);
     }
 }
 
