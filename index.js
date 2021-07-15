@@ -7,17 +7,27 @@ const bossFightVideo = document.getElementById("embed-video");
 const gameChanger = document.getElementById("change-game");
 const cube3D = document.getElementById("cube");
 var currentGame = "dark-souls-1"; // Default (it can change to "dark-souls-2")
+var currentBoss = "one"; // Default: Nito
 
 
 const setUp = () => {
-    /* Prepares the addEventListener and some functions after the DOM loads */
+    /* Prepares the addEventListener after the DOM loads */
     let bosses = ["one", "two", "three", "four"];
-    for (index=0; index < 4; index++) {listenerIconsBoss(index, bosses[index])}
+    for (index=0; index < 4; index++) {bossIconsListener(index, bosses[index])}
+    gameChanger.addEventListener("click", switchGame, false);
 }
 
-const listenerIconsBoss = (index, boss) => {
+const bossIconsListener = (index, boss) => {
     bossIcons[index].addEventListener(
-        "click", () => changeBoss(boss), false);
+        "click", () => {changeBoss(boss), currentBoss = boss}, false);
+}
+
+const switchGame = () => {
+    if (currentGame === "dark-souls-1") {currentGame = "dark-souls-2"}
+    else if (currentGame === "dark-souls-2") {currentGame = "dark-souls-1"}
+
+    gameChanger.src = `src/${currentGame}.png`;
+    changeBoss(currentBoss);
 }
 
 const getBossData = async () => {
