@@ -7,8 +7,8 @@
             "iconId": "icon-one",
             "lore": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Labore placeat eaque atque aut eos quaerat, in quo at perspiciatisveritatis enim rerum ratione repellat ipsa nemo excepturi, optiomollitia omnis.Duis id mauris non dolor sagittis euismod vitae sit amet mi. Duisat mattis sapien. Vivamus bibendum tincidunt elit id porttitor.Sed molestie vitae urna nec hendrerit. Praesent tristique eros utelit convallis scelerisque. Donec blandit rutrum bibendum.Curabitur eget bibendum metus. Cras sit amet dapibus enim. In erosdolor, eleifend nec fringilla non, congue vel purus. Nullafermentum ultrices augue nec elementum. In auctor, ex egetconsectetur vulputate, felis tortor pellentesque quam, vitaegravida massa metus eu mi. Morbi et nisl quis tellus aliquamefficitur non eu nibh. Duis et luctus tortor. Maecenas sit ameturna et libero varius consectetur. Fusce blandit elementum rutrum.Cras nec mauris rhoncus, dictum diam ac, semper ligula.",
             "video": "https://www.youtube-nocookie.com/embed/JrClUJyHY-o",
-            "icon": "../src/bosses/dark-souls-1/1-icon.png",
-            "cube-image": "../src/bosses/dark-souls-1/one.jpg"
+            "icon": "src/bosses/dark-souls-1/nito-icon.png",
+            "cube-img": "src/bosses/dark-souls-1/nito.jpg"
         },
         "two": {
             "name": "Seath",
@@ -17,8 +17,8 @@
             "iconId": "icon-two",
             "lore": "Procedimientos Especiales de Contención: El ítem SCP-173 debe estar en una cámara sellada todo el tiempo. Cuando un miembro del personal deba entrar a la cámara de SCP-173, al menos tres personas deben entrar a la vez y la puerta debe volverse a cerrar tras de ellos. En todo momento, 2 personas deben mantener contacto visual con SCP-173 hasta que la cámara haya sido vaciada y vuelta a cerrar. Descripción: Trasladado al Sitio-19 en 1993. Su origen es aún desconocido. Está construido de hormigón y barras de refuerzo con trazos de pintura en aerosol marca Krylon. SCP-173 está animado y es extremadamente hostil. El objeto no se puede mover mientras esté dentro del campo de visión directa de alguien. El contacto visual hacia SCP-173 no se debe romper en ningún momento.",
             "video": "https://www.youtube-nocookie.com/embed/rhkILnXdWtU",
-            "icon": "../src/bosses/dark-souls-1/2-icon.png",
-            "cube-image": "../src/bosses/dark-souls-1/two.jpg"
+            "icon": "src/bosses/dark-souls-1/seath-icon.png",
+            "cube-img": "src/bosses/dark-souls-1/seath.jpg"
         },
         "three": {
             "name": "Witch of Izalith",
@@ -27,8 +27,8 @@
             "iconId": "icon-three",
             "lore": "Procedimientos Especiales de Contención: El Sitio-83 ha sido establecido fuera de SCP-121 para alojar al personal dedicado a la contención de SCP-121.El perímetro de SCP-121 permanecerá cercado del área circundante, con guardias establecidos a lo largo del perímetro en todo momento. Los guardias deberán portar uniformes del ejército local y permanecer armados en todo momento. Los guardias deberán rotarse cada cuatro horas. Se deberá informar a la población que SCP-121 se encuentra en cuarentena debido a la persistencia de material peligroso. Se colocarán signos de advertencia a los setenta y cinco (75), cincuenta (50) y veinticinco (25) kilómetros de todas las vías que lleven a SCP-121 para disuadir a los intrusos.Se deberá recordar a los civiles que se aproximen a SCP-121 del estado de cuarentena, y deberán ser forzados a partir; aquellos que se resistan deberán ser detenidos para cuestionamiento.",
             "video": "https://www.youtube-nocookie.com/embed/SUCzgiucoxA",
-            "icon": "../src/bosses/dark-souls-1/3-icon.png",
-            "cube-image": "../src/bosses/dark-souls-1/three.jpg"
+            "icon": "src/bosses/dark-souls-1/izalith-icon.png",
+            "cube-img": "src/bosses/dark-souls-1/izalith.jpg"
         },
         "four": {
             "name": "Gwyn",
@@ -37,8 +37,8 @@
             "iconId": "icon-four",
             "lore": "Procedimientos Especiales de Contención: SCP-129 está en gran parte del mundo e infecta a grandes cantidades de humanos y animales diariamente. Por lo tanto, los esfuerzos por su contención están centrados en tratar a los individuos infectados y en la erradicación de todas las especies que pertenezcan a SCP-129. Aunque al menos el 98% de la población mundial alberga una inmunidad natural a una o más especies de SCP-129, los brotes que alcanzan la Tercera Etapa o superior (descritas más abajo) deben ser contenidos tan pronto como sea posible y los individuos afectados puestos bajo cuarentena bajo los protocolos de alto riesgo de contagio. Consulte el Documento #129-A-1 para más información.",
             "video": "https://www.youtube-nocookie.com/embed/VIeqxGaZnFo",
-            "icon": "../src/bosses/dark-souls-1/4-icon.png",
-            "cube-image": "../src/bosses/dark-souls-1/four.jpg"
+            "icon": "src/bosses/dark-souls-1/gwyn-icon.png",
+            "cube-img": "src/bosses/dark-souls-1/gwyn.jpg"
         }
     },
     "dark-souls-2": {
@@ -49,8 +49,8 @@
             "iconId": "icon-one",
             "lore": "Procedimientos Especiales de Contención: El Sitio de Investigación-346 ha sido construido al interior de SCP-921. Señales que indican peligros de volcanes y terremotos han sido colocadas alrededor del área de contención del SCP-921, con el fin de desincentivar las visitas de civiles. Agentes de la Fundación disfrazados de miembros del Servicio Forestal Estatal Armenite deben asegurarse de que el área permanezca desocupada en todo momento. La interacción con instancias de SCP-921-1 está permitida a todo el personal que haya pasado el proceso de autorización general para el Sitio, mientras que la interacción directa con SCP-921-2 requiere la autorización del Director del Sitio, Dr. Siril.",
             "video": "https://www.youtube-nocookie.com/embed/dUEU7DddA9k",
-            "icon": "../src/bosses/dark-souls-2/1-icon.png",
-            "cube-image": "../src/bosses/dark-souls-2/one.jpg"
+            "icon": "src/bosses/dark-souls-2/nito-icon.png",
+            "cube-img": "src/bosses/dark-souls-2/nito.jpg"
         },
         "two": {
             "name": "The Duke's Dear Freja",
@@ -59,8 +59,8 @@
             "iconId": "icon-two",
             "lore": "Procedimientos Especiales de Contención: Las estatuas SCP-531 son efectivamente inofensivas cuando están una frente a otra. Cuando no están siendo estudiadas, estarán almacenadas en pares coincidentes en la instalación de media seguridad yeah, colocadas en nichos de pared en lados opuestos a lo largo de un pasillo cubierto de mármol en una disposición que se aproxime a las circunstancias en las que fue encontrado el par original. Los nichos tienen puertas corredizas que se pueden cerrar mediante control remoto para que sea más fácil acercarse a ellas para su mantenimiento o experimentación, o en las ocasiones en que haya un número impar de estatuas en el inventario. Hay actualmente catorce estatuas en inventario, numeradas desde SCP-531-1 a SCP-531-14.",
             "video": "https://www.youtube-nocookie.com/embed/2ZJMWzerxLM",
-            "icon": "../src/bosses/dark-souls-2/2-icon.png",
-            "cube-image": "../src/bosses/dark-souls-2/two.jpg"
+            "icon": "src/bosses/dark-souls-2/seath-icon.png",
+            "cube-img": "src/bosses/dark-souls-2/seath.jpg"
         },
         "three": {
             "name": "Lost Sinner",
@@ -69,8 +69,8 @@
             "iconId": "icon-three",
             "lore": "Descripción: SCP-368 es una grulla animada de origami doblada en cartulina ornamentada. Si se le deja por su cuenta, va a posarse, acicalarse, volar de plataforma en plataforma, y ocasionalmente, construirá un nido provisional hecho de material de oficinas cercanas. Responde con afecto al contacto humano, como lo haría un pájaro domesticado. La conducta del objeto es, en general, amigable, y se le ha observado posándose en los hombros de varios miembros del personal SCP. Aunque el objeto no tiene requerimientos nutricionales, parece “dormir” por la noche ya que coloca su cabeza bajo su ala. Estudiar las propiedades físicas de SCP-368 ha sido difícil: el objeto parece interpretar intentos de capturarlo y contenerlo como un juego y ha demostrado considerable agilidad e ingenio para evadir incluso los más concentrados intentos de contenerlo. Aún no se conoce cómo SCP-368 se suspende y mantiene su estabilidad en el aire.",
             "video": "https://www.youtube-nocookie.com/embed/WN-Eo4zaGdI",
-            "icon": "../src/bosses/dark-souls-2/3-icon.png",
-            "cube-image": "../src/bosses/dark-souls-2/three.jpg"
+            "icon": "src/bosses/dark-souls-2/izalith-icon.png",
+            "cube-img": "src/bosses/dark-souls-2/izalith.jpg"
         },
         "four": {
             "name": "Old Iron King",
@@ -79,8 +79,8 @@
             "iconId": "icon-four",
             "lore": "El recinto debe ser limpiado en una base semanal. Durante este tiempo, todos los miembros de SCP-098 deben ser considerados primero, prevenir heridas o muerte al personal o SCP-098. Cualquier miembro de SCP-098 que parezca enfermo o herido debe ser retirado y examinado. Descripción: SCP-098 es una especie de crustáceo previamente desconocido. Se parecen a cangrejos, más bien chelae, los miembros delanteros terminan en estructuras parecidas a cuchillos que incorporan silicio para formar una punta extremadamente afilada. Los especímenes alcanzan un tamaño mayor al que es normal para otros artrópodos terrestres, en 40cm de alto y 60cm de ancho.",
             "video": "https://www.youtube-nocookie.com/embed/idGog_rWb0I",
-            "icon": "../src/bosses/dark-souls-2/4-icon.png",
-            "cube-image": "../src/bosses/dark-souls-2/four.jpg"
+            "icon": "src/bosses/dark-souls-2/gwyn-icon.png",
+            "cube-img": "src/bosses/dark-souls-2/gwyn.jpg"
         }
     }
 }

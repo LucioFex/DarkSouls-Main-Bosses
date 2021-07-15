@@ -1,7 +1,7 @@
 /* JS document */
 
 const bossInformation = document.getElementsByClassName("boss-lore");
-const cubeBossOne = document.getElementsByClassName("face");
+const cubeBossFaces = document.getElementsByClassName("face");
 const bossIcons = document.getElementsByClassName("boss-icon");
 const bossFightVideo = document.getElementById("embed-video");
 const gameChanger = document.getElementById("change-game");
@@ -27,7 +27,7 @@ const switchGame = () => {
     else if (currentGame === "dark-souls-2") {currentGame = "dark-souls-1"}
 
     gameChanger.src = `src/${currentGame}.png`;
-    changeBoss(currentBoss);
+    changeBoss(currentBoss, "change-game");
 }
 
 const getBossData = async () => {
@@ -38,10 +38,11 @@ const getBossData = async () => {
     return json
 }
 
-const changeBoss = async (boss) => {
+const changeBoss = async (boss, changeGame=undefined) => {
     let data = await getBossData();
     data = data[currentGame];
 
+    // if (changeGame === "change-game") {changeBossImages(data)} // Update images
     cubeAnimation(data[boss].degrees); // 3D cube animations
     bossDescription(data[boss]); // Text changer and animations
     bossGrayScale(data[boss].iconId); // Boss-icons gray scale animation
@@ -53,6 +54,12 @@ const cubeAnimation = (degrees) => {
     cube3D.style.transform = `rotateY(${degrees})`;
     setTimeout(() => cube3D.style.transition = "all 0s", 100);
 }
+
+// const changeBossImages = (data) => {  // Keep Working Here
+//     for (index=0; index < 4 ; index ++) {
+//         cubeBossFaces[index].style.backgroundImage = `url(${data[cubeBossFaces[index].id]["cube-img"]})`;
+//     }
+// }
 
 const bossGrayScale = (iconId) => {
     for (tag of bossIcons) {
