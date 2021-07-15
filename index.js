@@ -6,29 +6,31 @@ const bossIcons = document.getElementsByClassName("boss-icon");
 const bossFightVideo = document.getElementById("embed-video");
 const gameChanger = document.getElementById("change-game");
 const cube3D = document.getElementById("cube");
+var currentGame = "dark-souls-1"; // Default (it can change to "dark-souls-2")
 
 
 const setUp = () => {
     /* Prepares the addEventListener and some functions after the DOM loads */
     let bosses = ["one", "two", "three", "four"];
-    for (index=0; index < 4; index++) {changeBossDS1(index, bosses[index])}
+    for (index=0; index < 4; index++) {listenerIconsBoss(index, bosses[index])}
 }
 
-const changeBossDS1 = (index, boss) => {
+const listenerIconsBoss = (index, boss) => {
     bossIcons[index].addEventListener(
-        "click", () => changeBoss(boss, "dark-souls-1"), false);
+        "click", () => changeBoss(boss), false);
 }
 
-const getBossData = async (darksouls) => {
+const getBossData = async () => {
     /* Is a request-function to get the data from the JSON files */
-    let request = `json/${darksouls}.json`;
+    let request = `json/dark-souls.json`;
     let response = await fetch(request);
     let json = await response.json();
     return json
 }
 
-const changeBoss = async (boss, darksouls) => {
-    let data = await getBossData(darksouls);
+const changeBoss = async (boss) => {
+    let data = await getBossData();
+    data = data[currentGame];
 
     cubeAnimation(data[boss].degrees); // 3D cube animations
     bossDescription(data[boss]); // Text changer and animations
