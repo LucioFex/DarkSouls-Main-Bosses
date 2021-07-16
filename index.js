@@ -42,7 +42,7 @@ const changeBoss = async (boss, changeGame=undefined) => {
     let data = await getBossData();
     data = data[currentGame];
 
-    if (changeGame === "change-game") {changeBossImages(data)}
+    if (changeGame === "change-game") {changeBossImages(data)} // Game change
     cubeAnimation(data[boss].degrees); // 3D cube animations
     bossDescription(data[boss]); // Text changer and animations
     bossGrayScale(data[boss].iconId); // Boss-icons gray scale animation
@@ -56,11 +56,26 @@ const cubeAnimation = (degrees) => {
 }
 
 const changeBossImages = (data) => {
+    for (tag of cubeBossFaces) {
+        tag.style.transition = "ease-in-out 0.75s";
+        tag.style.filter = "blur(50px)";
+    }
+
     cubeBossFaces[0].style.backgroundImage = `url(${data.one.cubeImg})`;
     cubeBossFaces[2].style.backgroundImage = `url(${data.two.cubeImg})`;
     cubeBossFaces[3].style.backgroundImage = `url(${data.three.cubeImg})`;
     cubeBossFaces[1].style.backgroundImage = `url(${data.four.cubeImg})`;
+
+    setTimeout(() => {
+        for (tag of cubeBossFaces) {tag.style.filter = "blur(0px)"}
+    }, 750)
+
+    setTimeout(() => {
+        for (tag of cubeBossFaces) {tag.style.transition = "all 0s"}
+    }, 1600)
+
 }
+
 
 const bossGrayScale = (iconId) => {
     for (tag of bossIcons) {
@@ -83,11 +98,12 @@ const bossDescription = (description) => {
         bossInformation[1].innerHTML = description.nick;
         bossInformation[2].innerHTML = description.lore;
 
-        for (tag of bossInformation) {
-            tag.style.opacity = 1;
-            tag.style.transition = "all 0s";
-        }
+        for (tag of bossInformation) {tag.style.opacity = 1}
     }, 750)
+
+    setTimeout(() => {
+        for (tag of bossInformation) {tag.style.transition = "all 0s"}
+    }, 1000)
 }
 
 // Wait for the DOM to start the script
