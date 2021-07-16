@@ -42,7 +42,7 @@ const changeBoss = async (boss, changeGame=undefined) => {
     let data = await getBossData();
     data = data[currentGame];
 
-    // if (changeGame === "change-game") {changeBossImages(data)} // Update images
+    if (changeGame === "change-game") {changeBossImages(data)}
     cubeAnimation(data[boss].degrees); // 3D cube animations
     bossDescription(data[boss]); // Text changer and animations
     bossGrayScale(data[boss].iconId); // Boss-icons gray scale animation
@@ -55,11 +55,12 @@ const cubeAnimation = (degrees) => {
     setTimeout(() => cube3D.style.transition = "all 0s", 100);
 }
 
-// const changeBossImages = (data) => {  // Keep Working Here
-//     for (index=0; index < 4 ; index ++) {
-//         cubeBossFaces[index].style.backgroundImage = `url(${data[cubeBossFaces[index].id]["cube-img"]})`;
-//     }
-// }
+const changeBossImages = (data) => {
+    cubeBossFaces[0].style.backgroundImage = `url(${data.one.cubeImg})`;
+    cubeBossFaces[2].style.backgroundImage = `url(${data.two.cubeImg})`;
+    cubeBossFaces[3].style.backgroundImage = `url(${data.three.cubeImg})`;
+    cubeBossFaces[1].style.backgroundImage = `url(${data.four.cubeImg})`;
+}
 
 const bossGrayScale = (iconId) => {
     for (tag of bossIcons) {
