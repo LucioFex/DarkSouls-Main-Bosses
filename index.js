@@ -83,12 +83,11 @@ const bossDescription = (description) => {
         bossInformation[1].innerHTML = description.nick;
         bossInformation[2].innerHTML = description.lore;
 
-        for (tag of bossInformation) {tag.style.opacity = 1}
+        for (tag of bossInformation) {
+            tag.style.opacity = 1;
+            tag.style.transition = "all 0s";
+        }
     }, 750)
-
-    setTimeout(() => {
-        for (tag of bossInformation) {tag.style.transition = "all 0s"}
-    }, 1000)
 }
 
 // Wait for the DOM to start the script
