@@ -41,7 +41,7 @@ the opening of an issue to check the change you want to make.
 
 ## Project Status:
 
-### `Version: 1.4.9`
+### `Version: 1.5.2`
 
 ## License
 
