@@ -3,6 +3,7 @@
 const bossInformation = document.getElementsByClassName("boss-lore");
 const cubeBossFaces = document.getElementsByClassName("face");
 const bossIcons = document.getElementsByClassName("boss-icon");
+const iconsContainer = document.getElementById("inner-article");
 const bossFightVideo = document.getElementById("embed-video");
 const gameChanger = document.getElementById("change-game");
 const cube3D = document.getElementById("cube");
@@ -60,26 +61,27 @@ const changeBossImages = (data) => {
 
     for (index=0; index < 4; index++) {
         cubeBossFaces[index].style.transition = "ease-in-out 1s";
-        bossIcons[index].style.transition = "ease-in-out 0.5s";
+        iconsContainer.style.transition = "ease-in-out 0.75s";
 
-        bossIcons[index].style.opacity = "0%";
+        iconsContainer.style.opacity = "0%";
         cubeBossFaces[index].style.backgroundImage = `
             url(${data[images[index]].cubeImg})`;
     }
 
+    images = {0: "one", 1: "two", 2: "three", 3: "four"};
     setTimeout(() => {
         for (index=0; index < 4; index++) {
             bossIcons[index].src = data[images[index]].icon;
-            bossIcons[index].style.opacity = "100%";
+            iconsContainer.style.opacity = "100%";
         }
-    }, 500)
+    }, 750)
 
     setTimeout(() => {
         for (index=0; index < 4; index++) {
             cubeBossFaces[index].style.transition = "all 0s";
-            bossIcons[index].style.transition = "all 0s";
+            iconsContainer.style.transition = "all 0s";
         }
-    }, 550)
+    }, 800)
 }
 
 const bossGrayScale = (iconId) => {
