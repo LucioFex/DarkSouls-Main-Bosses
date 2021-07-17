@@ -28,7 +28,7 @@ const switchGame = () => {
     else if (currentGame === "dark-souls-2") {currentGame = "dark-souls-1"}
 
     gameChanger.src = `src/${currentGame}.png`;
-    changeBoss(currentBoss, "change-game");
+    changeBoss(currentBoss, "change-game"); // Alternate de bosses
 }
 
 const getBossData = async () => {
@@ -43,7 +43,10 @@ const changeBoss = async (boss, changeGame=undefined) => {
     let data = await getBossData();
     data = data[currentGame];
 
-    if (changeGame === "change-game") {changeBossImages(data)} // Game change
+    if (changeGame === "change-game") { // Change of Game
+        updateCubeImages(data);
+        updateIconImages(data);
+    }
     cubeAnimation(data[boss].degrees); // 3D cube animations
     bossDescription(data[boss]); // Text changer and animations
     bossGrayScale(data[boss].iconId); // Boss-icons gray scale animation
@@ -51,52 +54,44 @@ const changeBoss = async (boss, changeGame=undefined) => {
 }
 
 const cubeAnimation = (degrees) => {
-    cube3D.style.transition = "ease-in-out 2.5s";
+    animationsTimer(cube3D, "ease-in-out 2.5s", 100);
     cube3D.style.transform = `rotateY(${degrees})`;
-    setTimeout(() => cube3D.style.transition = "all 0s", 100);
 }
 
-const changeBossImages = (data) => {
+const updateCubeImages = (data) => {
     let images = {0: "one", 1: "four", 2: "two", 3: "three"};
 
     for (index=0; index < 4; index++) {
-        cubeBossFaces[index].style.transition = "ease-in-out 1s";
-        iconsContainer.style.transition = "ease-in-out 0.75s";
-
-        iconsContainer.style.opacity = "0%";
+        animationsTimer(cubeBossFaces[index], "ease-in-out 1s", 1000);
         cubeBossFaces[index].style.backgroundImage = `
             url(${data[images[index]].cubeImg})`;
     }
+}
 
+const updateIconImages = (data) => {
     images = {0: "one", 1: "two", 2: "three", 3: "four"};
+    animationsTimer(iconsContainer, "ease-in-out 0.75s", 850);
+    iconsContainer.style.opacity = "0%";
+
     setTimeout(() => {
         for (index=0; index < 4; index++) {
             bossIcons[index].src = data[images[index]].icon;
-            iconsContainer.style.opacity = "100%";
         }
+        iconsContainer.style.opacity = "100%";
     }, 750)
-
-    setTimeout(() => {
-        for (index=0; index < 4; index++) {
-            cubeBossFaces[index].style.transition = "all 0s";
-            iconsContainer.style.transition = "all 0s";
-        }
-    }, 800)
 }
 
 const bossGrayScale = (iconId) => {
     for (tag of bossIcons) {
-        tag.style.transition = "ease-out 0.5s";
+        animationsTimer(tag, "ease-out 0.5s", 100);
         tag.style.filter = "grayscale(80%)";
-
         if (tag.id === iconId) {tag.style.filter = "grayscale(0%)"}
-        setTimeout(() => {tag.style.transition = "all 0s"}, 100);
     }
 }
 
 const bossDescription = (description) => {
     for (tag of bossInformation) {
-        tag.style.transition = "ease-in-out 0.75s";
+        animationsTimer(tag, "ease-in-out 0.75s", 850);
         tag.style.opacity = 0;
     }
 
@@ -104,13 +99,13 @@ const bossDescription = (description) => {
         bossInformation[0].innerHTML = description.name;
         bossInformation[1].innerHTML = description.nick;
         bossInformation[2].innerHTML = description.lore;
-
         for (tag of bossInformation) {tag.style.opacity = 1}
     }, 750)
+}
 
-    setTimeout(() => {
-        for (tag of bossInformation) {tag.style.transition = "all 0s"}
-    }, 1000)
+const animationsTimer = (element, transition, duration) => {
+    element.style.transition = transition;
+    setTimeout(() => {element.style.transition = "all 0s"}, duration)
 }
 
 // Wait for the DOM to start the script
