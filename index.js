@@ -56,18 +56,30 @@ const cubeAnimation = (degrees) => {
 }
 
 const changeBossImages = (data) => {
-    for (tag of cubeBossFaces) {tag.style.transition = "ease-in-out 1s"}
     let images = {0: "one", 1: "four", 2: "two", 3: "three"};
-    
+
     for (index=0; index < 4; index++) {
+        cubeBossFaces[index].style.transition = "ease-in-out 1s";
+        bossIcons[index].style.transition = "ease-in-out 0.5s";
+
+        bossIcons[index].style.opacity = "0%";
         cubeBossFaces[index].style.backgroundImage = `
             url(${data[images[index]].cubeImg})`;
-        bossIcons[index].src = data[images[index]].icon;
     }
 
     setTimeout(() => {
-        for (tag of cubeBossFaces) {tag.style.transition = "all 0s"}
-    }, 100)
+        for (index=0; index < 4; index++) {
+            bossIcons[index].src = data[images[index]].icon;
+            bossIcons[index].style.opacity = "100%";
+        }
+    }, 500)
+
+    setTimeout(() => {
+        for (index=0; index < 4; index++) {
+            cubeBossFaces[index].style.transition = "all 0s";
+            bossIcons[index].style.transition = "all 0s";
+        }
+    }, 550)
 }
 
 const bossGrayScale = (iconId) => {
