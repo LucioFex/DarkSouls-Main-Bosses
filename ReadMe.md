@@ -4,9 +4,8 @@
 
 ![](src/logo.png)
 
-You can move between the bosses within a 3D interface, to see a little about their lore.
-
-The boss sections (Dark Souls 1 and 2) are separated by a button with the number `1` or `2` at the top of the page.
+<p>You can move between the bosses within a 3D interface, to see a little about their lore.<br>
+The boss sections (Dark Souls 1 and 2) are separated by a button with the number `1` or `2` at the top of the page.</p>
 
 
 ![](concept/readme-presentation.gif)
@@ -41,7 +40,8 @@ the opening of an issue to check the change you want to make.
 
 ## Project Status:
 
-### `Version: 1.5.2`
+### `Version: 1.6.9`
+<h3><i>You can access the website by clicking <a href="https://luciofex.github.io/DarkSouls-Main-Bosses/" target="_blank">here</a>.</i></h3>
 
 ## License
 

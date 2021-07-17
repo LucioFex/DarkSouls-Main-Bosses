@@ -62,7 +62,7 @@ const updateCubeImages = (data) => {
     let images = {0: "one", 1: "four", 2: "two", 3: "three"};
 
     for (index=0; index < 4; index++) {
-        animationsTimer(cubeBossFaces[index], "ease-in-out 1s", 1000);
+        animationsTimer(cubeBossFaces[index], "ease-in-out 1s", 100);
         cubeBossFaces[index].style.backgroundImage = `
             url(${data[images[index]].cubeImg})`;
     }
@@ -76,8 +76,7 @@ const updateIconImages = (data) => {
     setTimeout(() => {
         for (index=0; index < 4; index++) {
             bossIcons[index].src = data[images[index]].icon;
-        }
-        iconsContainer.style.opacity = "100%";
+        } iconsContainer.style.opacity = "100%";
     }, 750)
 }
 
