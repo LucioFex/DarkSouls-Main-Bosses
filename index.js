@@ -70,7 +70,7 @@ const updateCubeImages = (data) => {
 
 const updateIconImages = (data) => {
     images = {0: "one", 1: "two", 2: "three", 3: "four"};
-    animationsTimer(iconsContainer, "ease-in-out 0.75s", 850);
+    animationsTimer(iconsContainer, "ease-in-out 0.75s", 850, "transform 0.1s");
     iconsContainer.style.opacity = "0%";
 
     setTimeout(() => {
@@ -82,7 +82,7 @@ const updateIconImages = (data) => {
 
 const bossGrayScale = (iconId) => {
     for (tag of bossIcons) {
-        animationsTimer(tag, "ease-out 0.5s", 100);
+        animationsTimer(tag, "ease-out 0.5s", 100, "transform 0.1s");
         tag.style.filter = "grayscale(80%)";
         if (tag.id === iconId) {tag.style.filter = "grayscale(0%)"}
     }
@@ -102,9 +102,9 @@ const bossDescription = (description) => {
     }, 750)
 }
 
-const animationsTimer = (element, transition, duration) => {
+const animationsTimer = (element, transition, duration, final="all 0s") => {
     element.style.transition = transition;
-    setTimeout(() => {element.style.transition = "all 0s"}, duration)
+    setTimeout(() => {element.style.transition = final}, duration)
 }
 
 // Wait for the DOM to start the script
