@@ -37,6 +37,9 @@ the opening of an issue to check the change you want to make.
 - Social media icons: [Font Awesome](https://fontawesome.com/)
 - Dark Souls 1 Background Pixel Art: [Zedotagger](https://twitter.com/Zedotagger).
 - Dark Souls 1 - Seath, Izalith, Nito and Gwyn Images: [Steve Stark](https://twitter.com/sstarkm).
+- Dark Souls 1 All Bosses and Old Iron King Lore: [Dark Souls Wiki](https://darksouls.fandom.com/wiki/Dark_Souls_Wiki).
+- Dark Souls 2 Rotten, Freja and Sinner Lore: [Souls Lore](http://soulslore.wikidot.com/).
+
 
 ## Project Status:
 
