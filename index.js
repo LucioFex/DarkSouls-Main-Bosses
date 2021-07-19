@@ -12,10 +12,14 @@ var currentBoss = "one"; // Default: Nito
 
 
 const setUp = () => {
-    /* Prepares the addEventListener after the DOM loads */
+    /*
+    Prepares the addEventListener after the DOM loads, and
+    deletes pre-loaded images.
+    */
     let bosses = ["one", "two", "three", "four"];
     for (index=0; index < 4; index++) {bossIconsListener(index, bosses[index])}
     gameChanger.addEventListener("click", switchGame, false);
+    document.getElementById("img-preloader").remove();
 }
 
 const bossIconsListener = (index, boss) => {
@@ -69,8 +73,8 @@ const updateCubeImages = (data) => {
 }
 
 const updateIconImages = (data) => {
-    images = {0: "one", 1: "two", 2: "three", 3: "four"};
-    animationsTimer(iconsContainer, "ease-in-out 0.75s", 1500, "transform 0.1s");
+    let images = {0: "one", 1: "two", 2: "three", 3: "four"};
+    animationsTimer(iconsContainer, "ease-in-out 0.75s", 1500, "all 0.1s");
     iconsContainer.style.opacity = "0%";
 
     setTimeout(() => {
@@ -82,7 +86,7 @@ const updateIconImages = (data) => {
 
 const bossGrayScale = (iconId) => {
     for (tag of bossIcons) {
-        animationsTimer(tag, "ease-out 0.5s", 500, "transform 0.1s");
+        animationsTimer(tag, "ease-out 0.5s", 500, "all 0.1s");
         tag.style.filter = "grayscale(80%)";
         if (tag.id === iconId) {tag.style.filter = "grayscale(0%)"}
     }

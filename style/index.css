@@ -17,6 +17,10 @@
     text-decoration: none;
 }
 
+#img-preloader {
+    display: none;
+}
+
 html, body {
     height: 100%;
     background-image: url("../src/dark-souls-bg.gif");
