@@ -16,12 +16,12 @@ aside {
 }
 
 #name-nickname h1 {
-    font-size: 2vw;
+    font-size: 2.5em;
 }
 
 #name-nickname h2 {
     color: #cfcfcf;
-    font-size: 1.25vw;
+    font-size: 1.5em;
 }
 
 #boss-description {
@@ -29,7 +29,7 @@ aside {
     font-family: "Montserrat", "Century Gothic", "Roboto";
     font-weight: 500;
     padding: 5%;
-    line-height: 1.7vw;
+    line-height: 1.5em;
     text-align: center;
     font-size: 1.2vw;
 }
@@ -47,16 +47,18 @@ aside {
     height: 100%;
 }
 
-@media(max-width: 1360px) {
+@media(min-width: 1400px) {
     #name-nickname h1 {
-        font-size: 2.5em;
+        font-size: 5vh;
     }
     
     #name-nickname h2 {
         color: #cfcfcf;
-        font-size: 1em;
+        font-size: 2.8vh;
     }
+}
 
+@media(max-width: 1360px) {
     #boss-description {
         font-size: 2vw;
     }
