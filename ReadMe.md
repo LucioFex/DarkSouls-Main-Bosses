@@ -43,7 +43,7 @@ the opening of an issue to check the change you want to make.
 
 ## Project Status:
 
-### `Version: 1.6.9`
+### `Version: 1.7.0`
 <h3><i>You can access the website by clicking <a href="https://luciofex.github.io/DarkSouls-Main-Bosses/" target="_blank">here</a>.</i></h3>
 
 ## License

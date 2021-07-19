@@ -1,6 +1,6 @@
 {
   "name": "darksouls-main-bosses",
-  "version": "1.6.9",
+  "version": "1.7.0",
   "description": "This is a compilation of the main bosses from Dark Souls 1 and their counterpart in the second game. You can move between them within a 3D interface, to see a little about their lore.",
   "main": "index.js",
   "repository": {
